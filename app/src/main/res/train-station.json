@@ -1,0 +1,492 @@
+[
+    {
+        "name": "Warszawa Centralna",
+        "location": {
+            "lat": 52.2297,
+            "lng": 21.0122
+        }
+    },
+    {
+        "name": "Kraków Główny",
+        "location": {
+            "lat": 50.0671,
+            "lng": 19.9452
+        }
+    },
+    {
+        "name": "Wrocław Główny",
+        "location": {
+            "lat": 51.1018,
+            "lng": 17.0301
+        }
+    },
+    {
+        "name": "Gdańsk Główny",
+        "location": {
+            "lat": 54.3520,
+            "lng": 18.6466
+        }
+    },
+    {
+        "name": "Poznań Główny",
+        "location": {
+            "lat": 52.4080,
+            "lng": 16.9340
+        }
+    },
+    {
+        "name": "Katowice",
+        "location": {
+            "lat": 50.2604,
+            "lng": 19.0288
+        }
+    },
+    {
+        "name": "Gdynia Główna",
+        "location": {
+            "lat": 54.5189,
+            "lng": 18.5416
+        }
+    },
+    {
+        "name": "Szczecin Główny",
+        "location": {
+            "lat": 53.4319,
+            "lng": 14.5568
+        }
+    },
+    {
+        "name": "Lublin Główny",
+        "location": {
+            "lat": 51.2468,
+            "lng": 22.5706
+        }
+    },
+    {
+        "name": "Łódź Fabryczna",
+        "location": {
+            "lat": 51.7700,
+            "lng": 19.4649
+        }
+    },
+    {
+        "name": "Gdynia Cisowa",
+        "location": {
+            "lat": 54.5472,
+            "lng": 18.5267
+        }
+    },
+    {
+        "name": "Kraków Płaszów",
+        "location": {
+            "lat": 50.0360,
+            "lng": 20.0057
+        }
+    },
+    {
+        "name": "Bydgoszcz Główna",
+        "location": {
+            "lat": 53.1185,
+            "lng": 17.9930
+        }
+    },
+    {
+        "name": "Szczecin Dąbie",
+        "location": {
+            "lat": 53.4205,
+            "lng": 14.5017
+        }
+    },
+    {
+        "name": "Lublin Wschodni",
+        "location": {
+            "lat": 51.2480,
+            "lng": 22.5657
+        }
+    },
+    {
+        "name": "Rzeszów Główny",
+        "location": {
+            "lat": 50.0295,
+            "lng": 22.0067
+        }
+    },
+    {
+        "name": "Płock",
+        "location": {
+            "lat": 52.5425,
+            "lng": 19.7060
+        }
+    },
+    {
+        "name": "Częstochowa",
+        "location": {
+            "lat": 50.8018,
+            "lng": 19.1212
+        }
+    },
+    {
+        "name": "Kielce",
+        "location": {
+            "lat": 50.8647,
+            "lng": 20.6309
+        }
+    },
+    {
+        "name": "Gorzów Wielkopolski",
+        "location": {
+            "lat": 52.7403,
+            "lng": 15.2220
+        }
+    },
+    {
+        "name": "Zielona Góra",
+        "location": {
+            "lat": 51.9369,
+            "lng": 15.5004
+        }
+    },
+    {
+        "name": "Kalisz",
+        "location": {
+            "lat": 51.7534,
+            "lng": 18.0925
+        }
+    },
+    {
+        "name": "Białystok",
+        "location": {
+            "lat": 53.1309,
+            "lng": 23.1747
+        }
+    },
+    {
+        "name": "Toruń Główny",
+        "location": {
+            "lat": 53.0056,
+            "lng": 18.6050
+        }
+    },
+    {
+        "name": "Sopot",
+        "location": {
+            "lat": 54.4409,
+            "lng": 18.5695
+        }
+    },
+    {
+        "name": "Olsztyn Główny",
+        "location": {
+            "lat": 53.7789,
+            "lng": 20.4955
+        }
+    },
+    {
+        "name": "Rybnik",
+        "location": {
+            "lat": 50.0970,
+            "lng": 18.5471
+        }
+    },
+    {
+        "name": "Włocławek",
+        "location": {
+            "lat": 52.6485,
+            "lng": 19.0910
+        }
+    },
+    {
+        "name": "Gliwice",
+        "location": {
+            "lat": 50.3024,
+            "lng": 18.6767
+        }
+    },
+    {
+        "name": "Czestochowa Stradom",
+        "location": {
+            "lat": 50.8090,
+            "lng": 19.1197
+        }
+    },
+    {
+        "name": "Rzeszów Staroniwa",
+        "location": {
+            "lat": 50.0393,
+            "lng": 21.9830
+        }
+    },
+    {
+        "name": "Zakopane",
+        "location": {
+            "lat": 49.2958,
+            "lng": 19.9753
+        }
+    },
+    {
+        "name": "Słupsk",
+        "location": {
+            "lat": 54.4603,
+            "lng": 17.0315
+        }
+    },
+    {
+        "name": "Kołobrzeg",
+        "location": {
+            "lat": 54.1732,
+            "lng": 15.5685
+        }
+    },
+    {
+        "name": "Cieszyn",
+        "location": {
+            "lat": 49.7460,
+            "lng": 18.6340
+        }
+    },
+    {
+        "name": "Lublin Wschodni",
+        "location": {
+            "lat": 51.2460,
+            "lng": 22.5657
+        }
+    },
+    {
+        "name": "Legnica",
+        "location": {
+            "lat": 51.2104,
+            "lng": 16.1836
+        }
+    },
+    {
+        "name": "Kędzierzyn-Koźle",
+        "location": {
+            "lat": 50.3444,
+            "lng": 18.2048
+        }
+    },
+    {
+        "name": "Łomża",
+        "location": {
+            "lat": 53.1792,
+            "lng": 22.0682
+        }
+    },
+    {
+        "name": "Kostrzyn",
+        "location": {
+            "lat": 52.5873,
+            "lng": 14.6469
+        }
+    },
+    {
+        "name": "Ostrów Wielkopolski",
+        "location": {
+            "lat": 51.6469,
+            "lng": 17.8081
+        }
+    },
+    {
+        "name": "Koszalin",
+        "location": {
+            "lat": 54.1972,
+            "lng": 16.1737
+        }
+    },
+    {
+        "name": "Siedlce",
+        "location": {
+            "lat": 52.1673,
+            "lng": 22.2935
+        }
+    },
+    {
+        "name": "Białystok Główny",
+        "location": {
+            "lat": 53.1331,
+            "lng": 23.1592
+        }
+    },
+    {
+        "name": "Bielsko-Biała Główna",
+        "location": {
+            "lat": 49.8191,
+            "lng": 19.0464
+        }
+    },
+    {
+        "name": "Sieradz",
+        "location": {
+            "lat": 51.6040,
+            "lng": 18.7517
+        }
+    },
+    {
+        "name": "Chełm",
+        "location": {
+            "lat": 51.1350,
+            "lng": 23.4760
+        }
+    },
+    {
+        "name": "Piotrków Trybunalski",
+        "location": {
+            "lat": 51.3969,
+            "lng": 19.6937
+        }
+    },
+    {
+        "name": "Radom",
+        "location": {
+            "lat": 51.4004,
+            "lng": 21.1639
+        }
+    },
+    {
+        "name": "Tarnów",
+        "location": {
+            "lat": 50.0159,
+            "lng": 20.9820
+        }
+    },
+    {
+        "name": "Elbląg",
+        "location": {
+            "lat": 54.1521,
+            "lng": 19.3961
+        }
+    },
+    {
+        "name": "Słubice",
+        "location": {
+            "lat": 52.3504,
+            "lng": 14.5539
+        }
+    },
+    {
+        "name": "Zamość",
+        "location": {
+            "lat": 50.7160,
+            "lng": 23.2709
+        }
+    },
+    {
+        "name": "Lębork",
+        "location": {
+            "lat": 54.5381,
+            "lng": 17.7537
+        }
+    },
+    {
+        "name": "Częstochowa Stradom",
+        "location": {
+            "lat": 50.8090,
+            "lng": 19.1197
+        }
+    },
+    {
+        "name": "Nowy Sącz",
+        "location": {
+            "lat": 49.6219,
+            "lng": 20.7096
+        }
+    },
+    {
+        "name": "Gliwice",
+        "location": {
+            "lat": 50.3024,
+            "lng": 18.6767
+        }
+    },
+    {
+        "name": "Opole Główne",
+        "location": {
+            "lat": 50.6746,
+            "lng": 17.9206
+        }
+    },
+    {
+        "name": "Sosnowiec Główny",
+        "location": {
+            "lat": 50.2866,
+            "lng": 19.1283
+        }
+    },
+    {
+        "name": "Bielsko-Biała Lipnik",
+        "location": {
+            "lat": 49.8233,
+            "lng": 19.0453
+        }
+    },
+    {
+        "name": "Wałbrzych Główny",
+        "location": {
+            "lat": 50.7794,
+            "lng": 16.2844
+        }
+    },
+    {
+        "name": "Gdańsk Śródmieście",
+        "location": {
+            "lat": 54.3499,
+            "lng": 18.6432
+        }
+    },
+    {
+        "name": "Tarnowskie Góry",
+        "location": {
+            "lat": 50.4440,
+            "lng": 18.8545
+        }
+    },
+    {
+        "name": "Oświęcim",
+        "location": {
+            "lat": 50.0330,
+            "lng": 19.2163
+        }
+    },
+    {
+        "name": "Chorzów Batory",
+        "location": {
+            "lat": 50.2636,
+            "lng": 18.9610
+        }
+    },
+    {
+        "name": "Bielsko-Biała Zachodnia",
+        "location": {
+            "lat": 49.8123,
+            "lng": 19.0293
+        }
+    },
+    {
+        "name": "Koszalin",
+        "location": {
+            "lat": 54.1972,
+            "lng": 16.1737
+        }
+    },
+    {
+        "name": "Sandomierz",
+        "location": {
+            "lat": 50.6763,
+            "lng": 21.7402
+        }
+    },
+    {
+        "name": "Siedlce",
+        "location": {
+            "lat": 52.1673,
+            "lng": 22.2935
+        }
+    },
+    {
+        "name": "Nowy Targ",
+        "location": {
+            "lat": 49.4819,
+            "lng": 20.0347
+        }
+    }
+]
