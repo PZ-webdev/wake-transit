@@ -2,17 +2,27 @@ package com.example.waketransit.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.material3.Divider
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.KeyboardType.Companion.Text
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.waketransit.dto.getAllStations
+import com.example.waketransit.model.Station
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.GoogleMap
@@ -30,6 +40,11 @@ fun MapScreen(navController: NavController) {
         position = CameraPosition.fromLatLngZoom(location, 6f)
     }
 
+    var query by remember { mutableStateOf("") }
+    val context = LocalContext.current
+    var stations = getAllStations(context)
+    var matchingStations by remember { mutableStateOf<List<Station>>(emptyList()) }
+
     Column(
         modifier = Modifier
             .fillMaxSize(),
@@ -40,7 +55,16 @@ fun MapScreen(navController: NavController) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            onValueChange = { /* Handle search query change here */ }
+            onValueChange = { newQuery ->
+                if (newQuery.isNotEmpty()) {
+                    matchingStations = stations
+                        .filter { it.name.contains(newQuery, ignoreCase = true) }
+                        .take(5)
+                } else {
+                    matchingStations = emptyList()
+                }
+            },
+            stations = matchingStations,
         )
 
         GoogleMap(
@@ -57,22 +81,53 @@ fun MapScreen(navController: NavController) {
 @Composable
 fun SearchField(
     modifier: Modifier = Modifier,
-    onValueChange: (String) -> Unit
+    onValueChange: (String) -> Unit,
+    stations: List<Station>
 ) {
     var text by remember { mutableStateOf("") }
 
-    BasicTextField(
-        value = text,
-        onValueChange = {
-            text = it
-            onValueChange(it)
-        },
+    val matchingStations = stations.filter { it.name.contains(text, ignoreCase = true) }
+
+    Column(
         modifier = modifier
             .background(Color.White)
             .border(1.dp, Color.Gray, shape = RoundedCornerShape(4.dp))
             .padding(8.dp)
-    )
+    ) {
+        BasicTextField(
+            value = text,
+            onValueChange = {
+                text = it
+                onValueChange(it)
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+        )
+
+        if (matchingStations.isNotEmpty()) {
+            LazyColumn {
+                items(matchingStations) { station ->
+                    Text(
+                        text = station.name,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(8.dp)
+                            .clickable {
+                                // Dodaj kod obsługi kliknięcia na stację
+                                // Na przykład, można przekazać stację do innej funkcji lub zaimplementować nawigację
+                            }
+                    )
+                    Divider()
+                }
+            }
+        } else {
+            Text("Brak pasujących stacji")
+        }
+    }
+
 }
+
 
 @Composable
 @Preview
