@@ -10,10 +10,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.waketransit.R
+import com.example.waketransit.ui.screen.MapScreen
 
 @Composable
-fun MainScreen() {
+fun MainScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -40,7 +43,7 @@ fun MainScreen() {
         Spacer(modifier = Modifier.height(50.dp))
 
         Button(
-            onClick = { /* Dodaj obsługę kliknięcia */ },
+            onClick = { navController.navigate("mapScreen") },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(48.dp)
@@ -64,5 +67,6 @@ fun MainScreen() {
 @Composable
 @Preview
 fun MainScreenPreview() {
-    MainScreen()
+    val navController = rememberNavController()
+    MainScreen(navController = navController)
 }
